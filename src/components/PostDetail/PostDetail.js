@@ -22,7 +22,7 @@ const PostDetails = () => {
 				.then((data) => setUser(data))
 
 
-			fetch(`http://jsonplaceholder.typicode.com/comments?postId=${postId}`)
+			fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
 				.then((response) => response.json())
 				.then((data) => setComments(data))
 		}
